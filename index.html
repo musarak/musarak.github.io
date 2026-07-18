@@ -1,80 +1,112 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Segoe UI',sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Mohammed Musarak | IT Support & Cybersecurity</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, sans-serif;
+}
 
 body{
-background:#0f172a;
-color:white;
+    background:#0f172a;
+    color:white;
+    line-height:1.6;
 }
 
+
+/* Navigation */
+
+header{
+    background:#020617;
+    padding:20px 10%;
+    position:sticky;
+    top:0;
+}
 
 nav{
-display:flex;
-justify-content:space-between;
-padding:20px 10%;
-background:#020617;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
+nav h2{
+    color:#38bdf8;
+}
 
 nav ul{
-display:flex;
-gap:25px;
-list-style:none;
+    display:flex;
+    list-style:none;
+    gap:20px;
 }
-
 
 nav a{
-color:white;
-text-decoration:none;
+    color:white;
+    text-decoration:none;
 }
 
 
+
+/* Hero */
+
 .hero{
-
-height:90vh;
-display:flex;
-align-items:center;
-padding:10%;
-
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    padding:10%;
 }
 
 
 .hero h1{
-font-size:50px;
+    font-size:50px;
 }
 
 
-.hero h2{
-color:#38bdf8;
-margin:20px 0;
+.hero span{
+    color:#38bdf8;
 }
 
 
-.button{
-
-display:inline-block;
-margin-top:20px;
-padding:12px 30px;
-background:#38bdf8;
-color:black;
-border-radius:20px;
-text-decoration:none;
-
+.hero p{
+    margin-top:20px;
+    max-width:600px;
 }
 
 
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 30px;
+    background:#38bdf8;
+    color:black;
+    border-radius:25px;
+    text-decoration:none;
+}
+
+
+
+/* Sections */
 
 section{
-
-padding:60px 10%;
-
+    padding:60px 10%;
 }
 
 
+h2{
+    margin-bottom:25px;
+    color:#38bdf8;
+}
+
+
+
+/* Cards */
 
 .cards{
 
@@ -85,21 +117,354 @@ gap:20px;
 }
 
 
-
-.cards div{
+.card{
 
 background:#1e293b;
 padding:25px;
 border-radius:15px;
+transition:0.3s;
 
 }
 
 
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+
+
+/* Footer */
 
 footer{
 
+background:#020617;
 text-align:center;
 padding:20px;
-background:#020617;
 
 }
+
+
+
+@media(max-width:700px){
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+margin-top:15px;
+flex-wrap:wrap;
+}
+
+.hero h1{
+font-size:35px;
+}
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<nav>
+
+<h2>Musarak</h2>
+
+<ul>
+
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+
+<div class="hero">
+
+
+<div>
+
+<h1>
+Hi, I'm <span>Mohammed Musarak</span>
+</h1>
+
+
+<h2>
+IT Support Intern | Cybersecurity Student
+</h2>
+
+
+<p>
+
+Passionate IT professional interested in Cybersecurity,
+Networking, System Administration and solving technical problems.
+
+</p>
+
+
+<a class="btn" href="#">
+Download CV
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<section id="about">
+
+
+<h2>About Me</h2>
+
+
+<p>
+
+I am an IT Support Intern at KonnectBPO and currently
+pursuing an HND in Cyber Security. I have experience in
+technical support, networking, troubleshooting and web development.
+My goal is to build a career in IT infrastructure and cybersecurity.
+
+</p>
+
+
+</section>
+
+
+
+
+
+<section id="skills">
+
+
+<h2>Technical Skills</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>Networking</h3>
+
+<p>
+TCP/IP, DHCP, DNS, VLAN,
+Cisco Packet Tracer,
+Network Troubleshooting
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Cybersecurity</h3>
+
+<p>
+SIEM, Threat Analysis,
+Digital Forensics,
+Linux Security,
+Security Monitoring
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Programming</h3>
+
+<p>
+Python, C,
+SQL, HTML,
+CSS, JavaScript
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Systems</h3>
+
+<p>
+Windows,
+Windows Server,
+Active Directory,
+Linux, Kali Linux
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section id="experience">
+
+
+<h2>Experience</h2>
+
+
+
+<div class="card">
+
+<h3>IT Support Intern - KonnectBPO</h3>
+
+<p>
+
+Providing technical support,
+hardware troubleshooting,
+software troubleshooting,
+network assistance and user support.
+
+</p>
+
+</div>
+
+
+<br>
+
+
+<div class="card">
+
+<h3>Web Development Intern - Tecgasoft</h3>
+
+<p>
+
+Worked on website development
+using HTML, CSS and JavaScript.
+
+</p>
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section id="projects">
+
+
+<h2>Projects</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>Network Lab</h3>
+
+<p>
+Created network simulations using
+Cisco Packet Tracer and practiced
+routing and troubleshooting.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Cybersecurity Research</h3>
+
+<p>
+Research project about social media
+addiction and digital wellbeing.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Portfolio Website</h3>
+
+<p>
+Designed and developed this professional
+personal portfolio website.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section id="contact">
+
+
+<h2>Contact</h2>
+
+
+<p>Email: your-email@gmail.com</p>
+
+<p>LinkedIn: linkedin.com/in/your-profile</p>
+
+<p>GitHub: github.com/your-profile</p>
+
+
+</section>
+
+
+
+
+
+<footer>
+
+<p>
+© 2026 Mohammed Musarak | IT Support & Cybersecurity
+</p>
+
+</footer>
+
+
+
+</body>
+</html>
